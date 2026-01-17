@@ -1,0 +1,255 @@
+/* ========== PAGE LAYOUT ========== */
+.page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  padding: 40px;
+  transition: background 0.3s ease;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 30px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* ========== DARK MODE ========== */
+.page.dark {
+  background: linear-gradient(135deg, #1a202c, #2d3748);
+}
+
+.page.dark .container {
+  background: #1f2933;
+  color: #e5e7eb;
+}
+
+.page.dark .card {
+  background: #2d3748;
+}
+
+.page.dark .input {
+  background: #1a202c;
+  color: #ffffff;
+  border: 1px solid #4a5568;
+}
+
+.page.dark .nav a {
+  color: #90cdf4;
+}
+
+/* ========== HEADINGS ========== */
+.title {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #666;
+  margin-bottom: 25px;
+}
+
+.page.dark .subtitle {
+  color: #cbd5e1;
+}
+
+/* ========== NAV (REACT ROUTER) ========== */
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 25px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #667eea;
+  font-weight: bold;
+  transition: color 0.2s ease;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+/* ========== CARDS ========== */
+.card {
+  background: #f9f9f9;
+  padding: 18px;
+  border-radius: 12px;
+  margin-bottom: 16px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.card h3 {
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.page.dark .card h3 {
+  color: #e5e7eb;
+}
+
+/* ========== INPUTS & FORMS ========== */
+.input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 2px rgba(102,126,234,0.2);
+}
+
+/* ========== LISTS ========== */
+.list {
+  padding-left: 20px;
+}
+
+/* ========== BUTTONS ========== */
+.btn {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-right: 6px;
+  margin-top: 6px;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.primary {
+  background: #667eea;
+  color: white;
+}
+
+.secondary {
+  background: #cbd5e1;
+  color: #1a202c;
+}
+
+.subtitle {
+  color: #374151;
+}
+
+.page.dark .card h3 {
+  color: #f9fafb;
+}
+
+
+.danger {
+  background: #e53e3e;
+  color: white;
+}
+
+/* ========== STATUS TEXT ========== */
+.status {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* ========== TRANSITIONS ========== */
+.box {
+  margin-top: 10px;
+  padding: 12px;
+  background: #edf2f7;
+  border-radius: 8px;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+}
+
+.box.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ========== PORTAL (MODAL) ========== */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  min-width: 260px;
+  text-align: center;
+}
+
+.page.dark .modal {
+  background: #2d3748;
+  color: #e5e7eb;
+}
+
+/* ========== HOC ========== */
+.hoc-box {
+  border: 2px dashed #667eea;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+/* ========== ROUTE TRANSITIONS ========== */
+.route-page {
+  animation: fadeSlide 0.4s ease;
+}
+
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 768px) {
+  .page {
+    padding: 20px;
+  }
+
+  .container {
+    padding: 20px;
+  }
+
+  .nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
+/* ========== ADDITIONAL STYLES ========== */
+.footer {
+  text-align: center;
+  margin-top: 30px;
+  color: #888;
+}
