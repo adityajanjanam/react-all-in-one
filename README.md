@@ -1,16 +1,185 @@
-# React + Vite
+---
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 🚀 React All-in-One (Single JSX)
 
-Currently, two official plugins are available:
+A comprehensive **React learning & showcase project** built in a **single JSX file**, covering **core, intermediate, and advanced React concepts** with clean UI, accessibility, and modern best practices.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+> Built by **Aditya Janjanam**
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📌 Live Overview
 
-## Expanding the ESLint configuration
+This project demonstrates **how most React concepts work together in a real application**, without unnecessary complexity or external UI libraries.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+✔ Single JSX architecture
+✔ Clean CSS (no frameworks)
+✔ ESLint & SonarLint compliant
+✔ Interview-ready
+
+---
+
+## 🧠 Concepts Covered
+
+### 🔹 Core React
+
+* JSX & Rendering
+* Components & Props
+* Conditional Rendering
+* Lists & Keys
+* Events & Forms
+* Controlled Inputs
+
+### 🔹 React Hooks
+
+* `useState`
+* `useEffect`
+* `useRef`
+* `useMemo`
+* `useCallback`
+* `useReducer`
+* `useContext`
+* **Custom Hook** (`useToggle`)
+
+### 🔹 Advanced React
+
+* React Router (multi-page navigation)
+* Context API
+* Portals (`createPortal`)
+* Suspense & Lazy Loading
+* Higher-Order Components (HOC)
+* `forwardRef`
+* CSS Transitions
+* Dark Mode toggle
+* Accessibility (ARIA, semantic HTML)
+
+---
+
+## 🧩 Project Structure
+
+```
+react-all-in-one/
+│
+├── src/
+│   ├── App.jsx        # Single JSX file (all React concepts)
+│   ├── App.css        # Styling, dark mode, transitions
+│   ├── index.css      # Global styles
+│   └── main.jsx       # createRoot entry
+│
+├── public/
+├── package.json
+├── vite.config.js
+└── README.md
+```
+
+---
+
+## ⚙️ Tech Stack
+
+* **React 18**
+* **Vite**
+* **React Router DOM**
+* **Plain CSS**
+* **ESLint + SonarLint friendly**
+
+---
+
+## ▶️ Getting Started
+
+### 1️⃣ Clone the repository
+
+```bash
+git clone https://github.com/YOUR_USERNAME/react-all-in-one.git
+cd react-all-in-one
+```
+
+### 2️⃣ Install dependencies
+
+```bash
+npm install
+```
+
+### 3️⃣ Run the app
+
+```bash
+npm run dev
+```
+
+Open 👉 `http://localhost:5173`
+
+---
+
+## 🌙 Features
+
+* Light / Dark Mode toggle
+* Animated route transitions
+* Modal using React Portal
+* Smooth UI interactions
+* Responsive layout
+* Accessible components
+
+---
+
+## 🎯 Why This Project?
+
+This project is designed to:
+
+* Help **learn React deeply**
+* Serve as a **revision reference**
+* Act as a **portfolio showcase**
+* Prepare for **React interviews**
+
+> Many React tutorials show isolated examples — this project shows **everything working together**.
+
+---
+
+## 🧠 Interview Talking Point
+
+> “I built a complete React concepts showcase in a single JSX file, covering hooks, routing, portals, HOCs, lazy loading, accessibility, and performance optimizations, while keeping the code ESLint and SonarLint compliant.”
+
+---
+
+## 📸 Screenshots (Optional)
+
+*Add screenshots here if you want later*
+
+```md
+![Home Page](./screenshots/home.png)
+```
+
+---
+
+## 👤 Author
+
+**Aditya Janjanam**
+Full Stack Developer
+
+* GitHub: [https://github.com/adityajanjanam](https://github.com/adityajanjanam)
+* LinkedIn: [https://www.linkedin.com/in/janjanamaditya](https://www.linkedin.com/in/janjanamaditya)
+
+---
+
+## 📄 License
+
+This project is open-source and available for learning and personal use.
+
+---
+
+## ⭐ Support
+
+If you found this useful:
+
+* ⭐ Star the repo
+* 🍴 Fork it
+* 📢 Share it
+
+---
+
+## 🚀 Next Improvements (Planned)
+
+* TypeScript version
+* Unit tests (Vitest)
+* ESLint + Prettier config
+* Deployment (Netlify / Vercel)
+
+---
