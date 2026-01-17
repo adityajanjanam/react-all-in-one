@@ -144,7 +144,8 @@ This project is designed to:
 *Add screenshots here if you want later*
 
 ```md
-![Home Page](./screenshots/home.png)
+<img width="1920" height="3381" alt="image" src="https://github.com/user-attachments/assets/8368275e-d77a-41f4-8fb8-9a24e5245bc5" />
+
 ```
 
 ---
